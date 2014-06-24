@@ -1,0 +1,31 @@
+<div class="container-fluid">
+  <ol>
+    <% if @features['step1'] %>
+      <li>
+        <h4>
+          Sinatra
+          <%= link_to "http://vuln1.alttab.org" %>
+          <%= link_to "https://github.com/pcorliss/sinatra_step_1" %>
+        </h4>
+      </li>
+    <% end %>
+    <% if @features['step2'] %>
+      <li>
+        <h4>
+          Node
+          <%= link_to "http://vuln2.alttab.org" %>
+          <%= link_to "https://github.com/pcorliss/node_step_2" %>
+        </h4>
+      </li>
+    <% end %>
+    <% if @features['step3'] %>
+      <li>
+        <h4>
+          Rails
+          <%= link_to "http://vuln3.alttab.org" %>
+          <%= link_to "https://github.com/pcorliss/rails_step_3" %>
+        </h4>
+      </li>
+    <% end %>
+  </ol>
+</div>
