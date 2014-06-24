@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+#
+Feature.create(name: 'step1', enabled: false)
+Feature.create(name: 'step2', enabled: false)
+Feature.create(name: 'step3', enabled: false)
+
