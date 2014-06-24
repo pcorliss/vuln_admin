@@ -31,4 +31,10 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.authorize_with do
+    authenticate_or_request_with_http_basic('Admin Panel') do |username, password|
+      username == 'admin' && password == (ENV['PASSWORD'] || 'secret')
+    end
+  end
 end
