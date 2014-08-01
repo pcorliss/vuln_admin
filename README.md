@@ -41,3 +41,4 @@ heroku run rake db:migrate
 heroku run rake db:seed
 heroku ps:scale web=1
 ```
+
